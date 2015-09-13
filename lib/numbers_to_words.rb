@@ -1,6 +1,7 @@
 class Fixnum
   define_method(:numbers_to_words) do
     number = self
+    number_array = []
     base_numbers = {
       1 => "one",
       2 => "two",
@@ -35,8 +36,13 @@ class Fixnum
     }
 
 
-    if (number < 20)
-      base_numbers.fetch(number)
+    if (number > 20)  && (number < 100)
+      number_array.push(tens_numbers.fetch(number - (number % 10)))
+      number_array.push(base_numbers.fetch(number % 10))
+
+    elsif (number < 20)
+      number_array.push(base_numbers.fetch(number))
     end
+    number_array.join(" ")
   end
 end
