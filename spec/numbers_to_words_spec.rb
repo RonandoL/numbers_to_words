@@ -13,4 +13,8 @@ describe("Fixnum#numbers_to_words") do
   it("translates double digit teen number into its written word form ") do
     expect((20).numbers_to_words()).to(eq("twenty"))
   end
+
+  it("translates double digit number into its written word form ") do
+    expect((73).numbers_to_words()).to(eq("seventy three"))
+  end
 end
