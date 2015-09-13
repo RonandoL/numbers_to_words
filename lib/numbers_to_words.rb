@@ -12,6 +12,36 @@ class Fixnum
       9 => "nine"
     }
 
-    ones.fetch(self)
+    teens = {
+      10 => "ten",
+      11 => "eleven",
+      12 => "twelve",
+      13 => "thirteen",
+      14 => "fourteen",
+      15 => "fifteen",
+      16 => "sixteen",
+      17 => "seventeen",
+      18 => "eighteen",
+      19 => "nineteen"
+    }
+
+    tens = {
+      20 => "twenty",
+      30 => "thirty",
+      40 => "fourty",
+      50 => "fifty",
+      60 => "sixty",
+      70 => "seventy",
+      80 => "eighty",
+      90 => "ninety"
+    }
+
+    if (self > 19) && (self < 100)
+      tens.fetch(self)
+    elsif (self > 9) && (self < 20)
+      teens.fetch(self)
+    else
+      ones.fetch(self)
+    end
   end
 end
