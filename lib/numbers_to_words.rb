@@ -1,6 +1,7 @@
 class Fixnum
   define_method(:numbers_to_words) do
-    ones = {
+    number = self
+    base_numbers = {
       1 => "one",
       2 => "two",
       3 => "three",
@@ -9,10 +10,7 @@ class Fixnum
       6 => "six",
       7 => "seven",
       8 => "eight",
-      9 => "nine"
-    }
-
-    teens = {
+      9 => "nine",
       10 => "ten",
       11 => "eleven",
       12 => "twelve",
@@ -25,7 +23,7 @@ class Fixnum
       19 => "nineteen"
     }
 
-    tens = {
+    tens_numbers = {
       20 => "twenty",
       30 => "thirty",
       40 => "fourty",
@@ -36,12 +34,9 @@ class Fixnum
       90 => "ninety"
     }
 
-    if (self > 19) && (self < 100)
-      tens.fetch(self)
-    elsif (self > 9) && (self < 20)
-      teens.fetch(self)
-    else
-      ones.fetch(self)
+
+    if (number < 20)
+      base_numbers.fetch(number)
     end
   end
 end
