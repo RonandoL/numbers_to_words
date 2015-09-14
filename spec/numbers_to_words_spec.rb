@@ -6,11 +6,11 @@ describe("Fixnum#numbers_to_words") do
     expect((13).numbers_to_words()).to(eq("thirteen"))
   end
 
-  it("translates double digit number into its written word form ") do
+  it("translates double digit number into its written word form") do
     expect((27).numbers_to_words()).to(eq("twenty seven"))
   end
 
-  # it("translates double digit number into its written word form ") do
-  #   expect((73).numbers_to_words()).to(eq("seventy three"))
-  # end
+  it("translates triple digit number into its written word form") do
+    expect((173).numbers_to_words()).to(eq("one hundred and seventy three"))
+  end
 end
