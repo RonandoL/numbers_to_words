@@ -27,7 +27,7 @@ class Fixnum
     tens_numbers = {
       20 => "twenty",
       30 => "thirty",
-      40 => "fourty",
+      40 => "forty",
       50 => "fifty",
       60 => "sixty",
       70 => "seventy",
@@ -35,11 +35,16 @@ class Fixnum
       90 => "ninety"
     }
 
-    if (number > 100)  && (number < 1000)
-      number_array.push(base_numbers.fetch((number - (number % 100)) / 100). concat(" hundred and"))  # gives us the hundreds number
-      number_array.push(tens_numbers.fetch((number % 100) - ((number % 100) % 10)))  # gives us the tens number
-      number_array.push(base_numbers.fetch((number % 100) % 10))  # gives us the ones number
-    elsif (number > 20)  && (number < 100)
+    if  (number > 1000) && (number < 10000)
+      number_array.push(base_numbers.fetch((number - (number % 1000)) / 1000) + (" thousand"))
+      number_array.push(base_numbers.fetch((number % 1000) / 100) + (" hundred and"))
+      number_array.push(tens_numbers.fetch((number % 100) - (number % 10)))
+      number_array.push(base_numbers.fetch((number % 10)))
+    elsif (number > 100) && (number < 1000)
+      number_array.push(base_numbers.fetch((number - (number % 100)) / 100) + (" hundred and"))  # gives us the hundreds number
+      number_array.push(tens_numbers.fetch((number % 100) - (number % 10)))  # gives us the tens number
+      number_array.push(base_numbers.fetch((number % 10)))  # gives us the ones number
+    elsif (number > 20) && (number < 100)
       number_array.push(tens_numbers.fetch(number - (number % 10)))
       number_array.push(base_numbers.fetch(number % 10))
     elsif (number < 20)
