@@ -1,10 +1,10 @@
-# _Scrabble Score_
+# _Numbers To Words_
 
 #### By _Ronando Long_
 
 ## Description
 
-_Takes in a word and returns a Scrabble score for that word._
+_Takes in a number from 1 - 9999 and returns the written word version of that number. If you plug in 9764 it will spit out 'nine thousand seven hundred and sixty four'._
 
 ## Setup
 
@@ -12,7 +12,7 @@ _Takes in a word and returns a Scrabble score for that word._
 
 ## Technologies Used
 
-_Ruby & rspec_
+_Ruby, rspec, blood sweat and tears_
 
 ### Legal
 
