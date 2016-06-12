@@ -20,7 +20,7 @@ Copyright (c) (®) (™) (℠) (℗) (§) (🔫) (☠) (🏀) 2015 **_Ronando Lo
 
 This software is licensed under the MIT NCC-1701 license.
 
-Permission is hereby granted, free of charge, to any person, being or entity, be they alive, dead or undead, obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, impediment or hinderance including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person, being or entity, be they alive, dead or undead, obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, impediment or hindrance including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright, ab initio, notice and this permission notice shall be included in all copies absque hoc or substantial portions of the Software and user must pay tribute to Cthulhu in the form of a sacrificial offering.
 
